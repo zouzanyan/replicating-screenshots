@@ -140,10 +140,12 @@ claude plugin validate plugins/replicating-screenshots-to-html --profile directo
 依赖范围（要按 `<name>--v<version>` 标签解析），或者用户用 `#<ref>` 钉住了市场源。要打的话：
 
 ```bash
-claude plugin tag --push     # 生成 replicating-screenshots-to-html--v1.0.0，并校验两处版本号一致
+# 在市场仓库根跑，要带上插件路径——根目录没有 plugin.json，不带会报 No plugin manifest found
+claude plugin tag plugins/replicating-screenshots-to-html --push
 ```
 
 它会往前走目录找 `marketplace.json`，比对版本号；工作区脏、标签已存在、两处版本不一致都会退出 1。
+先 `--dry-run` 看它打算打什么标签。
 改版本号要同时改 `plugin.json` 和 `SKILL.md` 的 frontmatter（后者只是给人看的）。
 
 ## 7. 打 skill 分发包（不走 plugin 市场的用户）
