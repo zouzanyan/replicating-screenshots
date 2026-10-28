@@ -29,8 +29,9 @@ replicating-screenshots/                      ← git 仓库根
 `assets/cover.png`、`examples/stats-card/` 都在下一层，直接拷过去会 404。拷完要改三处：
 
 - 首图 `assets/cover.png` → `skills/<name>/assets/cover.png`
-- 例子链接 `examples/stats-card/` → `skills/<name>/examples/stats-card/`
-- 「目录」代码块改成插件根视角，或者加一句「以下路径都在 `skills/<name>/` 下」
+- 例子链接 `examples/stats-card/` → `skills/<name>/examples/stats-card/`（英中两处都有）
+- 「目录 / Layout」两个代码块改成插件根视角，或加一句「以下路径都在 `skills/<name>/` 下」
+- 「快速开始 / Quick start」各加一句：命令的相对路径以 skill 根为准，先 `cd` 进去
 
 ## 2. 两份清单
 
