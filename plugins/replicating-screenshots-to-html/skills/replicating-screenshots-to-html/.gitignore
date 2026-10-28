@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# 例子里的渲染产物（跑第 1 步会重新生成）
+examples/*/render.png

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "zouzanyan",
+  "description": "Claude Code 扩展",
+  "owner": {
+    "name": "zouzanyan"
+  },
+  "plugins": [
+    {
+      "name": "replicating-screenshots-to-html",
+      "description": "把截图复刻成像素级 HTML/CSS：逐元素量墨量、位置与字形，用数字收敛而不是靠肉眼。",
+      "author": {
+        "name": "zouzanyan"
+      },
+      "source": "./plugins/replicating-screenshots-to-html",
+      "category": "development",
+      "homepage": "https://github.com/zouzanyan/replicating-screenshots"
+    }
+  ]
+}

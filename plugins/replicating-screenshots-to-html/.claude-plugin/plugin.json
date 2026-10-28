@@ -1,0 +1,10 @@
+{
+  "name": "replicating-screenshots-to-html",
+  "version": "1.0.0",
+  "description": "把截图复刻成像素级 HTML/CSS：逐元素量墨量、位置与字形，用数字收敛而不是靠肉眼。",
+  "author": {
+    "name": "zouzanyan"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/zouzanyan/replicating-screenshots"
+}
